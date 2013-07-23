@@ -1,8 +1,22 @@
 Planner::Application.routes.draw do
+  resources :activities
+
+
+  get "planner/index"
+
+  get "catalog/index"
+
+  resources :activity_categories
+
   get "home/index"
 
 root :to => 'home#index'
 
+  resources :home do
+    get 'about', on: :collection
+    get 'contact', on: :collection
+    get 'admin', on: :collection
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

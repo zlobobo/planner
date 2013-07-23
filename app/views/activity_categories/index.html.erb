@@ -1,0 +1,23 @@
+<h1>Listing Categories</h1>
+
+<table>
+  <tr>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @activity_categories.each do |activity_category| %>
+  <tr>
+    <td><%= activity_category.name %></td>
+    <td><%= link_to 'Edit', edit_activity_category_path(activity_category) %></td>
+    <td><%= link_to 'Destroy', activity_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+
+
+
+<br />
+<%= link_to 'New Activity category', new_activity_category_path %>

@@ -1,0 +1,37 @@
+<h1>My Catalog</h1>
+
+<div class="row-fluid">
+  <div class="span3">
+    <!-- Sidebar Holder -->
+    <div class="well sidebar-nav">
+      <!-- search section -->
+      <ul class="nav nav-list" id="search_item_holder">
+        <li class="nav-header">Search</li>
+        <li><div class="form-search">
+          <input type="text" class="input-medium" id="search_item">
+          <button type="submit" id="clear_search" class="btn">×</button>
+        </div>
+        </li>
+        <li><h6 id="current_products_count"></h6></li>
+      </ul>
+      <!-- /search section -->
+      <hr>
+      <!-- Categories Holder -->
+      <ul class="nav nav-list" id="categories_list">
+        <li class="nav-header">Categories</li>
+        <li class="active_category"><a href="#" class="all">All</a></li>
+        <% @test.each do |t| %>
+            <li><a href="#"><%= t.name %></a></li>
+        <% end %>
+      </ul>
+      <!-- /Categories Holder -->
+    </div>
+    <!-- /Sidebar Holder -->
+  </div>
+  <div class="span9">
+    <!-- Products Holder -->
+    <ul id="products_container" class="thumbnails">
+    </ul>
+    <!-- /Products Holder -->
+  </div>
+</div>

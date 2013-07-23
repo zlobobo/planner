@@ -1,0 +1,86 @@
+/* Globals */
+.modal-body{
+	max-height:300px;
+	overflow:auto;
+	max-width:100%;
+}
+
+.fl{
+	float:left;
+}
+
+.fr{
+	float:right;
+}
+
+.clear{
+	clear:both;
+}
+
+.tar{
+	text-align:right;
+}
+
+/* item specifics */
+
+/* product details modal footer height */
+.product_details_modal .modal-footer{
+	height:50px;
+}
+
+/* Categories breadcrumb color */
+#products_breadcrumb{
+	color:#aaa;
+}
+/* Current Category */
+.active_category{
+	margin-left:1px;
+}
+/* Current Category link */
+.active_category a{
+	background:#fff;
+	color:#FAA732;
+}
+#current_products_count{
+	margin-top:8px;
+}
+
+/* Product Item shadow */
+.thumbnail{
+	border:0;
+	-webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.075);
+	-moz-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.075);
+	box-shadow: 0 4px 4px rgba(0, 0, 0, 0.075);
+}
+
+/* Paypal button image */
+.btn_img, .btn_img:hover,.btn_img.disabled{
+	padding:0;
+	margin-bottom:0;
+	background:transparent; 
+	border:0;
+	}
+
+/* Thumbnail image holder */
+.thumb_holder{
+	margin:0 auto;
+	height:100px;
+	width:150px;
+	overflow:hidden;
+	background:url(../img/ajax-loader.gif) center center no-repeat;
+}
+
+/* Product summery */
+.product_sum{
+	min-height:70px;
+}
+
+/* sidebar navigation */
+.sidebar-nav {
+        padding: 9px 0;
+ }
+ 
+ /* Footer */
+ #footer{
+	background:#ddd; position:fixed; bottom:0; margin-bottom:-10px; height:20px; padding:6px 8px 10px 8px;
+}

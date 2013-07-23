@@ -5,10 +5,51 @@
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "http://code.jquery.com/jquery-2.0.3.min.js","http://code.jquery.com/ui/1.10.3/jquery-ui.min.js","application" %>
   <%= csrf_meta_tags %>
+  <base target="_self">
 </head>
 <body>
+<div id="header">
+<div id="menu">
+  <ul>
+    <li class="green">
+      <p><a href="#" id="home">Home</a></p>
+      <p class="subtext">The front page</p>
+    </li>
+    <li class="yellow">
+      <p><a href="#" id="about">About</a></p>
+      <p class="subtext">More info</p>
+    </li>
+    <li class="red">
+      <p><a href="#" id="contact">Contact</a></p>
+      <p class="subtext">Get in touch</p>
+    </li>
+    <li class="blue">
+      <p><a href="#" id="catalog">Catalog</a></p>
+      <p class="subtext">Take a look</p>
+    </li>
+    <li class="purple">
+      <p><a href="#" id="planner">Planner</a></p>
+      <p class="subtext">Legal things</p>
+    </li>
+    <li class="grey">
+      <p><a href="#" id="admin">Admin</a></p>
+      <p class="subtext">Admin options</p>
+    </li>
+  </ul>
+</div>
+<div id="auth">
+  Auth block
+</div>
+</div>
 
-<%= yield %>
 
+<br>
+<div id="container">
+  <%= yield %>
+</div>
+
+<div id="inspect">
+<%=params.inspect %>
+</div>
 </body>
 </html>

@@ -1,11 +1,92 @@
-#tab1,#tab2{
-width:100%;
-}
-tr{
+
+#tab1 tr, #tab2 tr{
 vertical-align: top;
 text-align: center;
 background: white;
 }
-#tab1, #tab2{
+#tab1,#tab2{
+width:100%;
 margin-bottom: 50px;
 }
+
+table{
+      border: 2px solid;
+}
+
+#header{
+    margin-top: 10px;
+    margin-left: 10%;
+    margin-right: 10%;
+    height:110px;
+    padding-top: 10px;
+    background: #000000 url(../images/back.jpg);
+    background-repeat: repeat;
+}
+#menu{
+    margin-top: 10px;
+}
+
+#auth{
+    margin-top: 10px;
+    margin-left: 80%;
+    height:50px;
+    border: solid 1px black;
+}
+
+#container{
+     margin-top: 10px;
+     margin-left: 10%;
+     background-color: white;
+     width: 80%;
+ }
+
+#inspect{
+    margin-top: 410px;
+    margin-left: 10%;
+    background-color: white;
+    width: 80%;
+}
+
+
+/* Page styles */
+body{
+    font-family:"Lucida Grande", arial, sans-serif;
+    background:#ffffcc;
+    overflow:auto; 
+    padding-bottom: 20px;
+}
+
+#menu ul{
+    margin:0;
+    padding:0;
+}
+
+#menu li{
+    width:100px;
+    height:50px;
+    float:left;
+    color:#191919;
+    text-align:center;
+    overflow:hidden;
+}
+
+#menu a{
+    color:#FFF;
+    text-decoration:none;
+}
+
+p{
+    padding:15px 5px;
+}
+
+.subtext{
+    padding-top:25px;
+}
+
+/*Menu Color Classes*/
+.green{background:#6AA63B;}
+.yellow{background:#FBC700;}
+.red{background:#D52100;}
+.purple{background:#5122B4;}
+.blue{background:#0292C0;}
+.grey{background:grey;}
