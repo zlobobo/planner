@@ -2,28 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3ccd4393-944d-4f9e-81bf-93270d86277b" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\images\rails.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\javascripts\activities.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\javascripts\activity_categories.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\javascripts\catalog.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\javascripts\home.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\javascripts\planner.js.coffee" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\JQueryXMLStore.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\activities.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\activity_categories.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\bootstrap-responsive.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\bootstrap.min.css" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\catalog.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\home.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\app\assets\stylesheets\planner.css.scss" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\public\images\1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\public\images\2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\public\images\3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\public\images\4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\public\javascript\bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\Sites\planner\public\javascript\test.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/catalog/index.html.erb" afterPath="$PROJECT_DIR$/app/views/catalog/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="planner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -44,6 +24,7 @@
     <file path="/_form.html.erb" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1374590554714" ignored="false" />
     <file path="/activities_controller.rb" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1374590515807" ignored="false" />
     <file path="/catalog.js" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1374672869495" ignored="false" />
+    <file path="/seeds.rb" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1374675552021" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,56 +43,7 @@
     <favorites_list name="planner" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/catalog/index.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="-4.3846154">
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="60" column="29" selection-start="872" selection-end="872" vertical-scroll-proportion="0.5316045">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="222.css" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/222.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="42" column="37" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/javascript/catalog.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="7" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="catalog_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/catalog_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -129,7 +61,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/home/admin.html.erb" />
         <option value="$PROJECT_DIR$/app/models/activity_category.rb" />
         <option value="$PROJECT_DIR$/app/controllers/activity_categories_controller.rb" />
         <option value="$PROJECT_DIR$/db/migrate/20130723125713_create_activities.rb" />
@@ -145,6 +76,7 @@
         <option value="$PROJECT_DIR$/public/javascript/catalog.js" />
         <option value="$PROJECT_DIR$/app/views/catalog/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
+        <option value="$PROJECT_DIR$/db/seeds.rb" />
       </list>
     </option>
   </component>
@@ -248,6 +180,20 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="db" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="planner" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -712,18 +658,18 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1848" height="1088" extended-state="1" />
-    <editor active="true" />
+    <frame x="-4" y="-4" width="1848" height="1088" extended-state="0" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26700112" sideWeight="0.67118996" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26700112" sideWeight="0.67118996" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32881" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -795,18 +741,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/activities/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="136" selection-start="264" selection-end="264" vertical-scroll-proportion="0.1722973" />
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/rubymine.jar!/resources/html5-schema/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="115" column="22" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="142" column="8" selection-start="4433" selection-end="4448" vertical-scroll-proportion="0.33225283">
@@ -817,13 +751,6 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="4" selection-start="112" selection-end="135" vertical-scroll-proportion="0.110210694">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="16" selection-start="862" selection-end="882" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -865,23 +792,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascript/catalog.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="7" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/catalog_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="19" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/222.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="37" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -893,13 +806,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/catalog/index.html.erb">
+    <entry file="file://$PROJECT_DIR$/config/database.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="-4.3846154">
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
+        <state line="20" column="13" selection-start="510" selection-end="510" vertical-scroll-proportion="0.38573745">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="16" selection-start="862" selection-end="882" vertical-scroll-proportion="0.44084278">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascript/catalog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="448" selection-end="448" vertical-scroll-proportion="0.3306321">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/222.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="42" column="37" selection-start="616" selection-end="616" vertical-scroll-proportion="0.08265802">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="44" selection-start="561" selection-end="561" vertical-scroll-proportion="0.30307943">
+          <folding />
         </state>
       </provider>
     </entry>
@@ -907,6 +845,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="60" column="29" selection-start="872" selection-end="872" vertical-scroll-proportion="0.5316045">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/catalog/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="0.1928934">
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
