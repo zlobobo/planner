@@ -1,6 +1,7 @@
 class CatalogController < ApplicationController
   def index
-    @test=ActivityCategory.all
+    @cats = ActivityCategory.all
+    @acts = Activity.all
     render layout: false
   end
 end

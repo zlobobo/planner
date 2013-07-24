@@ -38,8 +38,6 @@ $(document).ready(function(){
     });
     $("#admin").click(function(){
         location.href = Routes.admin_home_index_path();
-    });
-
-
+    });	
 
 });
