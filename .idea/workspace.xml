@@ -22,14 +22,8 @@
       <change type="DELETED" beforePath="C:\Sites\planner\public\images\4.jpg" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\planner\public\javascript\bootstrap.min.js" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\planner\public\javascript\test.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/222.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/222.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/catalog.js" afterPath="$PROJECT_DIR$/public/javascript/catalog.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/catalog_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/catalog_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/index.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activity_categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/activity_categories/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/custom.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/catalog/index.html.erb" afterPath="$PROJECT_DIR$/app/views/catalog/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="planner.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -72,20 +66,37 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/catalog/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="55" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="-18.153847">
+            <state line="21" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="-4.3846154">
               <folding>
                 <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="catalog.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="custom.css" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="60" column="29" selection-start="872" selection-end="872" vertical-scroll-proportion="0.5316045">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="222.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/222.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="42" column="37" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="catalog.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascript/catalog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.24797407">
+            <state line="12" column="7" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -125,15 +136,15 @@
         <option value="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
         <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/catalog_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/activities/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/activity_categories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/assets/stylesheets/222.css" />
-        <option value="$PROJECT_DIR$/app/views/catalog/index.html.erb" />
         <option value="$PROJECT_DIR$/public/javascript/catalog.js" />
+        <option value="$PROJECT_DIR$/app/views/catalog/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css" />
       </list>
     </option>
   </component>
@@ -701,7 +712,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-4" y="-4" width="1848" height="1088" extended-state="0" />
+    <frame x="-4" y="-4" width="1848" height="1088" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -784,11 +795,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/activity_categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="25" selection-start="161" selection-end="161" vertical-scroll-proportion="0.16504854" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activities/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="6" column="136" selection-start="264" selection-end="264" vertical-scroll-proportion="0.1722973" />
@@ -797,13 +803,6 @@
     <entry file="jar://$APPLICATION_HOME_DIR$/lib/rubymine.jar!/resources/html5-schema/common.rnc">
       <provider selected="true" editor-type-id="text-editor">
         <state line="115" column="22" selection-start="3137" selection-end="3137" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="12" selection-start="288" selection-end="288" vertical-scroll-proportion="0.027552674">
           <folding />
         </state>
       </provider>
@@ -845,13 +844,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/222.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="82" column="17" selection-start="1137" selection-end="1137" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activities/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="24" column="0" selection-start="523" selection-end="523" vertical-scroll-proportion="0.6903553">
@@ -866,20 +858,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/catalog/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="55" column="0" selection-start="2124" selection-end="2124" vertical-scroll-proportion="-18.153847">
-          <folding>
-            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="42" column="29" selection-start="1219" selection-end="1219" vertical-scroll-proportion="0.56852794">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascript/catalog.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="7" selection-start="448" selection-end="448" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -891,9 +879,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascript/catalog.js">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/222.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="292" selection-end="292" vertical-scroll-proportion="0.24797407">
+        <state line="42" column="37" selection-start="616" selection-end="616" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/catalog/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="21" column="52" selection-start="796" selection-end="796" vertical-scroll-proportion="-4.3846154">
+          <folding>
+            <element signature="n#style#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#1;n#div#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="60" column="29" selection-start="872" selection-end="872" vertical-scroll-proportion="0.5316045">
           <folding />
         </state>
       </provider>
