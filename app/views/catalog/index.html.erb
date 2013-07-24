@@ -5,9 +5,9 @@
       <ul><li class="nav-header">Categories</li></ul>
       <!-- Categories Holder -->
       <ul class="nav nav-list" id="categories_list">
-        <li class="active_category"><a href="#" class="all">All</a></li>
+        <li id="all" class="active_category"><a href="#" class="all">All</a></li>
         <% @cats.each do |c| %>
-            <li><a href="#"><%= c.name %></a></li>
+            <li id=<%= c.id %>><a href="#"><%= c.name %></a></li>
         <% end %>
       </ul>
       <!-- /Categories Holder -->
@@ -21,13 +21,13 @@
           <li class="span3 product_item" style="margin-left: 10px;">
             <div class="thumbnail" style="height: 195px;">
                 <div class="thumb_holder">
-                    <a data-toggle="modal" href=#<%= a.id %>><img src="../images/temp.jpg"></a>
+                    <a data-toggle="modal" href=#prod<%= a.id %>><img src="../images/temp.jpg"></a>
                 </div>
                 <div class="caption">
                   <div class="product_sum">
                     <h4><%= a.name %></h4>
                   </div>
-                  <div class="product_details_modal modal hide fade" style="display: none;" aria-hidden="true" id=<%= a.id %>>
+                  <div class="product_details_modal modal hide fade" style="display: none;" aria-hidden="true" id=prod<%= a.id %>>
                     <div class="modal-header">
                       <a class="close" data-dismiss="modal">X</a>
                       <div class="caption">
@@ -40,7 +40,7 @@
                     <div class="modal-footer"></div>
                   </div>
                   <p>
-                    <a class="btn btn-warning" data-toggle="modal" href=#<%= a.id %>>
+                    <a class="btn btn-warning" data-toggle="modal" href=#prod<%= a.id %>>
                       <i class="icon-zoom-in"></i>
                       View details
                     </a>
