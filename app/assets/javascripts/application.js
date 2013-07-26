@@ -15,6 +15,11 @@
 //= require_tree .
 $(document).ready(function(){
 
+    $.ajaxSetup ({
+        cache: false,
+        timeout: 2000
+    });
+
     $("#menu li").mouseover(function(){
         $(this).stop().animate({height:'120px'},{queue:false, duration:600})
     });
@@ -38,6 +43,5 @@ $(document).ready(function(){
     });
     $("#admin").click(function(){
         location.href = Routes.admin_home_index_path();
-    });	
-
+    });
 });

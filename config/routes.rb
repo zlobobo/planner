@@ -1,6 +1,7 @@
 Planner::Application.routes.draw do
-  resources :activities
+  devise_for :users
 
+  resources :activities
 
   get "planner/index"
 

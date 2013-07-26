@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>Planner</title>
-  <%= stylesheet_link_tag    "http://twitter.github.com/bootstrap/assets/css/bootstrap.css", "application", :media => "all" %>
-  <%= javascript_include_tag "http://code.jquery.com/jquery-2.0.3.min.js","http://code.jquery.com/ui/1.10.3/jquery-ui.min.js","application" %>
+  <%= stylesheet_link_tag    "http://twitter.github.com/bootstrap/assets/css/bootstrap.css", "http://code.jquery.com/ui/jquery-ui-git.css", "application", :media => "all" %>
+  <%= javascript_include_tag "http://code.jquery.com/jquery-2.0.3.min.js","http://code.jquery.com/ui/1.10.3/jquery-ui.min.js", "http://twitter.github.io/bootstrap/assets/js/bootstrap.js","application" %>
   <%= csrf_meta_tags %>
   <base target="_self">
 </head>
@@ -31,17 +31,29 @@
       <p><a href="#" id="planner">Planner</a></p>
       <p class="subtext">Legal things</p>
     </li>
-    <li class="grey">
-      <p><a href="#" id="admin">Admin</a></p>
-      <p class="subtext">Admin options</p>
-    </li>
   </ul>
 </div>
 <div id="auth">
-  Auth block
-</div>
-</div>
+  <% if user_signed_in?%>
+      <div class="btn-group">
+        <a class="btn btn-inverse" href="#"><i class="icon-user icon-white"></i> <%= current_user.name %></a>
+        <a class="btn btn-inverse dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href=<%=edit_user_registration_path %>><i class="icon-pencil"></i> Edit</a></li>
+          <% if current_user.admin %>
+            <li><a href="#" id="admin"><i class="icon-wrench"></i> Admin menu</a></li>
+          <% end %>
+        </ul>
+      </div>
+      <div id="sign_out">
+        <%=button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-danger" , confirm: "Are you sure?"%>
+      </div>
+  <%else%>
+      <%= link_to 'Sign In', new_user_session_path, class: "btn btn-inverse"%>
+  <%end%>
 
+</div>
+</div>
 
 <br>
 <div id="container">

@@ -1,19 +1,46 @@
-<h1>My Planner</h1>
+
 <table id="tab1" border="1" cellspacing="5" cellpadding="0" bgcolor="#ffffcc" align="center" width="80%">
   <col span="1" width="15%">
-  <col span="1" width="70%">
-  <col span="1" width="15%">
+  <col span="1" width="60%">
+  <col span="1" width="25%">
   <tr height="190px">
     <td>
-      <div>
+      <div class="tab_header">Choose category</div>
+      <div class="tab_container">
+      <select id="categories" size="10">
+        <% @cats.each do |c| %>
+        <option value=<%= c.id %>><%= c.name %></option>
+        <% end %>
+      </select>
       </div>
     </td>
-    <td>2</td>
-    <td>3</td>
+    <td>
+      <div class="tab_header">Choose activity</div>
+      <div id="act_list" class="tab_container" class="ui-multiselect ui-helper-clearfix">
+        <ul id="act_container" class="selected ui-sortable">
+            <% if @acts%>
+                <% @acts.each do |a| %>
+                <li class="ui-state-default ui-priority-secondary">
+                  <a href="#" id=act<%= a.id %>><%= a.name %></a>
+                  <a href="#" class="action plus"><span class="ui-corner-all ui-icon ui-icon-plus"></span></a>
+                </li>
+            <% end %>
+          <% end %>
+        </ul>
+      </div>
+    </td>
+    <td>
+      <div class="tab_header">Final list</div>
+      <div class="tab_container">
+        <ul id="list_container"></ul>
+      </div>
+    </td>
   </tr>
   <tr height="240px">
-    <td>4</td>
-    <td>5</td>
-    <td>6</td>
+    <td><div class="tab_header">Photos</div></td>
+    <td><div class="tab_header">Activity Info</div></td>
+    <td><div class="tab_header">Comments</div></td>
   </tr>
 </table>
+<%= javascript_include_tag "../javascript/planner.js"%>
+

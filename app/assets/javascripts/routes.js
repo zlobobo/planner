@@ -275,6 +275,14 @@
   about_home_index_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[6,"about",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
+// activities => /activities(.:format)
+  activities_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[7,"/",false],[6,"activities",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// activity => /activities/:id(.:format)
+  activity_path: function(_id, options) {
+  return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"activities",false]],[7,"/",false]],[3,"id",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
 // activity_categories => /activity_categories(.:format)
   activity_categories_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[7,"/",false],[6,"activity_categories",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
@@ -287,6 +295,10 @@
   admin_home_index_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[6,"admin",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
+// cancel_user_registration => /users/cancel(.:format)
+  cancel_user_registration_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"cancel",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
 // catalog_index => /catalog/index(.:format)
   catalog_index_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"catalog",false]],[7,"/",false]],[6,"index",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
@@ -294,6 +306,14 @@
 // contact_home_index => /home/contact(.:format)
   contact_home_index_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[6,"contact",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// destroy_user_session => /users/sign_out(.:format)
+  destroy_user_session_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"sign_out",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// edit_activity => /activities/:id/edit(.:format)
+  edit_activity_path: function(_id, options) {
+  return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"activities",false]],[7,"/",false]],[3,"id",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
 // edit_activity_category => /activity_categories/:id/edit(.:format)
   edit_activity_category_path: function(_id, options) {
@@ -303,6 +323,14 @@
   edit_home_path: function(_id, options) {
   return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[3,"id",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
+// edit_user_password => /users/password/edit(.:format)
+  edit_user_password_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"password",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// edit_user_registration => /users/edit(.:format)
+  edit_user_registration_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
 // home => /home/:id(.:format)
   home_path: function(_id, options) {
   return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[3,"id",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
@@ -311,6 +339,10 @@
   home_index_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[6,"index",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
+// new_activity => /activities/new(.:format)
+  new_activity_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"activities",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
 // new_activity_category => /activity_categories/new(.:format)
   new_activity_category_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"activity_categories",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
@@ -318,6 +350,18 @@
 // new_home => /home/new(.:format)
   new_home_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// new_user_password => /users/password/new(.:format)
+  new_user_password_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"password",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// new_user_registration => /users/sign_up(.:format)
+  new_user_registration_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"sign_up",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// new_user_session => /users/sign_in(.:format)
+  new_user_session_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"sign_in",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
 // planner_index => /planner/index(.:format)
   planner_index_path: function(options) {
@@ -330,6 +374,18 @@
 // root => /
   root_path: function(options) {
   return Utils.build_path([], [], [7,"/",false], arguments);
+  },
+// user_password => /users/password(.:format)
+  user_password_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"password",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// user_registration => /users(.:format)
+  user_registration_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[7,"/",false],[6,"users",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// user_session => /users/sign_in(.:format)
+  user_session_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"sign_in",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   }}
 ;
 

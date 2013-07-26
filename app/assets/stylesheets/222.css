@@ -1,17 +1,42 @@
 
 #tab1 tr, #tab2 tr{
 vertical-align: top;
-text-align: center;
 background: white;
 }
 #tab1,#tab2{
 width:100%;
 margin-bottom: 50px;
+padding: 0;
+border: 1px #bbb;
 }
 
-table{
-      border: 2px solid;
+.dropdown-toggle{
+    height: 20px;
 }
+
+.tab_container{
+margin: 0;
+}
+
+.tab_header{
+    border-bottom: solid 1px #bbb;
+    text-align: center;
+}
+
+ul{
+margin: 0;
+}
+
+li{
+    padding-left: 20px;
+    position: relative;
+    text-align: center;
+}
+
+span{
+    float:right;
+}
+
 
 #header{
     margin-top: 10px;
@@ -24,13 +49,19 @@ table{
 }
 #menu{
     margin-top: 10px;
+    margin-left: 25px;
 }
 
 #auth{
     margin-top: 10px;
-    margin-left: 80%;
+    margin-left: 77%;
     height:50px;
-    border: solid 1px black;
+    padding: 5px;
+}
+
+#sign_out{
+    margin: 5px;
+    display: inline-block;
 }
 
 #container{
@@ -47,6 +78,10 @@ table{
     width: 80%;
 }
 
+li{
+    list-style: none;
+    padding-left: 0;
+}
 
 /* Page styles */
 body{
@@ -84,9 +119,8 @@ p{
 }
 
 /*Menu Color Classes*/
-.green{background:#6AA63B;}
-.yellow{background:#FBC700;}
-.red{background:#D52100;}
-.purple{background:#5122B4;}
-.blue{background:#0292C0;}
-.grey{background:grey;}
+.green{background:#73603D;}
+.yellow{background:#BF8A49;}
+.red{background:#F2CA80;}
+.purple{background:#5E5A59;}
+.blue{background:#0D0D0D;}
