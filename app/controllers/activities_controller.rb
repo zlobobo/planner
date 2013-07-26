@@ -1,12 +1,9 @@
 class ActivitiesController < ApplicationController
-  # GET /activities
-  # GET /activities.json
+  before_filter :check_admin
+
   def index
     @activities = Activity.includes(:activity_category)
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @activities }
-    end
+    render layout: false
   end
 
   # GET /activities/1
@@ -44,7 +41,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.save
-        format.html { redirect_to activities_path, notice: 'Activity was successfully created.' }
+        format.html { redirect_to admin_home_index_path, notice: 'Activity was successfully created.' }
         format.json { render json: @activity, status: :created, location: @activity }
       else
         format.html { render action: "new" }
@@ -60,7 +57,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
-        format.html { redirect_to activities_path, notice: 'Activity was successfully updated.' }
+        format.html { redirect_to admin_home_index_path, notice: 'Activity was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -76,7 +73,7 @@ class ActivitiesController < ApplicationController
     @activity.destroy
 
     respond_to do |format|
-      format.html { redirect_to activities_url }
+      format.html { redirect_to admin_home_index_path }
       format.json { head :no_content }
     end
   end

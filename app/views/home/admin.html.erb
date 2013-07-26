@@ -1,6 +1,37 @@
-<h1>Admin</h1>
+<div class="tabbable">
+    <ul class="nav nav-tabs">
+        <li class="active"><a href="#A" data-toggle="tab" id="user_tab">Users</a></li>
+        <li><a href="#B" data-toggle="tab" id="cat_tab">Activity categories</a></li>
+        <li><a href="#C" data-toggle="tab" id="act_tab">Activities</a></li>
+    </ul>
+  <div class="tab-content">
+    <div class="tab-pane active" id="A">
+      <table class="table">
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Admin</th>
+          <th>Actions</th>
+        </tr>
 
+        <% @users.each do |u| %>
+            <tr>
+              <td><%= u.name %></td>
+              <td><%= u.email %></td>
+              <td><% if u.admin %><i class="icon-user icon-ok"></i><%end%></td>
+              <td></td>
+            </tr>
+        <% end %>
+      </table>
+    </div>
+    <div class="tab-pane" id="B">
+      <p>Modify activity categories.</p>
+    </div>
+    <div class="tab-pane" id="C">
+      <p>Modify activities</p>
+    </div>
+  </div>
 
-<%= link_to 'Edit Activity categories', activity_categories_path %>
-<br>
-<%= link_to 'Edit Activities', activities_path %>
+</div>
+
+<%= javascript_include_tag "../javascript/admin.js"%>

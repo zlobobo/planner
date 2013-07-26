@@ -33,8 +33,15 @@ li{
     text-align: center;
 }
 
-span{
+a span{
     float:right;
+}
+
+.dev_span{
+    display: block;
+    margin: 10px 40% 20px 40%;
+    text-align: center;
+    width: 20%;
 }
 
 
@@ -62,6 +69,10 @@ span{
 #sign_out{
     margin: 5px;
     display: inline-block;
+}
+
+#sign_in{
+    margin: 5px 0 0 30px;
 }
 
 #container{
@@ -124,3 +135,29 @@ p{
 .red{background:#F2CA80;}
 .purple{background:#5E5A59;}
 .blue{background:#0D0D0D;}
+
+.border-form-div {
+    max-width: 230px;
+    padding: 19px 29px 29px;
+    margin: 0 auto 20px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    -webkit-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    -moz-box-shadow: 0 1px 2px rgba(0,0,0,.05);
+    box-shadow: 0 1px 2px rgba(0,0,0,.05);
+}
+.border-form-div .form-signin-heading,
+.border-form-div .checkbox {
+    margin-bottom: 10px;
+}
+.border-form-div input[type="text"],
+.border-form-div input[type="email"],
+.border-form-div input[type="password"] {
+    font-size: 16px;
+    height: auto;
+    margin-bottom: 15px;
+    padding: 7px 9px;
+}

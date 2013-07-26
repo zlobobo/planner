@@ -1,5 +1,5 @@
-<h2>Sign up</h2>
-
+<span class="label label-inverse dev_span">Sign up</span>
+<div class='border-form-div'>
 <%= simple_form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
   <%= f.error_notification %>
 
@@ -8,12 +8,9 @@
     <%= f.input :name, :required => true %>
     <%= f.input :password, :required => true %>
     <%= f.input :password_confirmation, :required => true %>
-    <%= f.input :admin, :required => false %>
-  </div>
-
-  <div class="form-actions">
     <%= f.button :submit, "Sign up" %>
   </div>
 <% end %>
 
 <%= render "devise/shared/links" %>
+</div>

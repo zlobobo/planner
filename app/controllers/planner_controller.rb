@@ -1,4 +1,6 @@
 class PlannerController < ApplicationController
+  before_filter :redir, only: [:edit,:update,:destroy,:show,:new,:create]
+
   def index
     category = params[:cat_id]
     @cats = ActivityCategory.all
@@ -7,4 +9,5 @@ class PlannerController < ApplicationController
     end
     render layout: false
   end
+
 end

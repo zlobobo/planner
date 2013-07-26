@@ -49,7 +49,9 @@
         <%=button_to "Sign out", destroy_user_session_path, method: :delete, class: "btn btn-danger" , confirm: "Are you sure?"%>
       </div>
   <%else%>
-      <%= link_to 'Sign In', new_user_session_path, class: "btn btn-inverse"%>
+      <div id="sign_in">
+        <%= link_to 'Sign In', new_user_session_path, class: "btn btn-inverse"%> or <%=link_to "Sign Up", new_user_registration_path, class: "btn btn-inverse" %>
+      </div>
   <%end%>
 
 </div>

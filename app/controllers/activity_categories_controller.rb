@@ -1,14 +1,9 @@
 class ActivityCategoriesController < ApplicationController
-  # GET /activity_categories
-  # GET /activity_categories.json
-
+  before_filter :check_admin
 
   def index
     @activity_categories = ActivityCategory.all
-    respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: @activity_categories }
-    end
+    render layout: false
   end
 
   # GET /activity_categories/1
@@ -26,7 +21,6 @@ class ActivityCategoriesController < ApplicationController
   # GET /activity_categories/new.json
   def new
     @activity_category = ActivityCategory.new
-
     respond_to do |format|
       format.html # new.html.erb
       format.json { render json: @activity_category }
@@ -45,7 +39,7 @@ class ActivityCategoriesController < ApplicationController
 
     respond_to do |format|
       if @activity_category.save
-        format.html { redirect_to activity_categories_path, notice: 'Activity category was successfully created.' }
+        format.html { redirect_to admin_home_index_path, notice: 'Activity category was successfully created.' }
         format.json { render json: @activity_category, status: :created, location: @activity_category }
       else
         format.html { render action: "new" }
@@ -61,7 +55,7 @@ class ActivityCategoriesController < ApplicationController
 
     respond_to do |format|
       if @activity_category.update_attributes(params[:activity_category])
-        format.html { redirect_to activity_categories_path, notice: 'Activity category was successfully updated.' }
+        format.html { redirect_to admin_home_index_path, notice: 'Activity category was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -77,7 +71,7 @@ class ActivityCategoriesController < ApplicationController
     @activity_category.destroy
 
     respond_to do |format|
-      format.html { redirect_to activity_categories_url }
+      format.html { redirect_to admin_home_index_path }
       format.json { head :no_content }
     end
   end

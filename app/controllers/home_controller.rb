@@ -1,4 +1,7 @@
 class HomeController < ApplicationController
+  before_filter :check_admin, only: [:admin]
+  before_filter :redir, only: [:edit,:update,:destroy,:show,:new,:create]
+
   def index
   end
 
@@ -11,6 +14,7 @@ class HomeController < ApplicationController
   end
 
   def admin
+    @users = User.all
   end
 
 end
