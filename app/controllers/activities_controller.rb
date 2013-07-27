@@ -10,11 +10,6 @@ class ActivitiesController < ApplicationController
   # GET /activities/1.json
   def show
     @activity = Activity.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @activity }
-    end
   end
 
   # GET /activities/new
@@ -22,16 +17,14 @@ class ActivitiesController < ApplicationController
   def new
     @activity = Activity.new
     @category = ActivityCategory.all
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @activity }
-    end
+    render layout: false
   end
 
   # GET /activities/1/edit
   def edit
     @activity = Activity.find(params[:id])
     @category = ActivityCategory.all
+    render layout: false
   end
 
   # POST /activities

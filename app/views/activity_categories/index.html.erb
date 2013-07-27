@@ -7,13 +7,9 @@
 <% @activity_categories.each do |activity_category| %>
   <tr>
     <td><%= activity_category.name %></td>
-    <td><%= link_to 'Edit', edit_activity_category_path(activity_category) %> <%= link_to 'Destroy', activity_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><a href="#" class="edit_cat" value="<%= activity_category.id %>">Edit</a> <%= link_to 'Destroy', activity_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
-
-
-
 <br>
-<%= link_to 'New Activity category', new_activity_category_path %>
+<a href="#" id="new_cat">New Activity category</a>

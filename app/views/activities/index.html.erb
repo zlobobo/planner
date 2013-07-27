@@ -11,10 +11,9 @@
     <td><%= a.activity_category.name %></td>
     <td><%= a.name %></td>
     <td><%= a.description %></td>
-    <td><%= link_to 'Edit', edit_activity_path(a) %> <%= link_to 'Destroy', a, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+    <td><a href="#" class="edit_act" value="<%= a.id %>">Edit</a> <%= link_to 'Destroy', a, method: :delete, data: { confirm: 'Are you sure?' } %></td>
   </tr>
 <% end %>
 </table>
-
 <br>
-<%= link_to 'New Activity', new_activity_path %>
+<a href="#" id="new_act">New Activity</a>

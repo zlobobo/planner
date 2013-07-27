@@ -6,30 +6,19 @@ class ActivityCategoriesController < ApplicationController
     render layout: false
   end
 
-  # GET /activity_categories/1
-  # GET /activity_categories/1.json
   def show
     @activity_category = ActivityCategory.find(params[:id])
-
-    respond_to do |format|
-      format.html # show.html.erb
-      format.json { render json: @activity_category }
-    end
   end
 
-  # GET /activity_categories/new
-  # GET /activity_categories/new.json
   def new
     @activity_category = ActivityCategory.new
-    respond_to do |format|
-      format.html # new.html.erb
-      format.json { render json: @activity_category }
-    end
+    render layout: false
   end
 
   # GET /activity_categories/1/edit
   def edit
     @activity_category = ActivityCategory.find(params[:id])
+    render layout: false
   end
 
   # POST /activity_categories

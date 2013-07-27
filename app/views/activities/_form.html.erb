@@ -2,5 +2,5 @@
     <%= f.input :activity_category_id, collection: @category, default: params[:activity_category_id]%>
     <%= f.input :name %>
     <%= f.input :description, input_html: { rows: '5'} %>
-    <%= f.button :submit %>
+    <%= f.button :submit, input_html: { class: 'btn btn-primary'} %>
 <% end %>

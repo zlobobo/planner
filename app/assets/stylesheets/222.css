@@ -44,6 +44,11 @@ a span{
     width: 20%;
 }
 
+.in_form{
+    width: 80%;
+    text-align: center;
+    margin: 10px 10% 20px 10%;
+}
 
 #header{
     margin-top: 10px;
