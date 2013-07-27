@@ -20,4 +20,14 @@ $(document).ready(function(){
         $(this).parent().get(0).remove();
     });
 
+    $('#act_list').on('click','.act_desc', function(){
+        $('#act_info').load(Routes.activity_path($(this).attr('value')));
+    });
+
+    $('#act_list').on('click','.pagination a', function(event){
+        event.preventDefault();
+        path = $(this).attr('href') + " #act_container";
+        $("#act_list").load(path);
+    });
+
 });

@@ -10,6 +10,7 @@ class ActivitiesController < ApplicationController
   # GET /activities/1.json
   def show
     @activity = Activity.find(params[:id])
+    render layout: false
   end
 
   # GET /activities/new

@@ -21,10 +21,11 @@
             <% if @acts%>
                 <% @acts.each do |a| %>
                 <li class="ui-state-default ui-priority-secondary">
-                  <a href="#" id=act<%= a.id %>><%= a.name %></a>
+                  <a href="#" class="act_desc" value=<%= a.id %>><%= a.name %></a>
                   <a href="#" class="action plus"><span class="ui-corner-all ui-icon ui-icon-plus"></span></a>
                 </li>
-            <% end %>
+                <% end %>
+            <%= will_paginate @acts %>
           <% end %>
         </ul>
       </div>
@@ -38,7 +39,10 @@
   </tr>
   <tr height="240px">
     <td><div class="tab_header">Photos</div></td>
-    <td><div class="tab_header">Activity Info</div></td>
+    <td>
+      <div class="tab_header">Activity Info</div>
+      <div id="act_info"></div>
+    </td>
     <td><div class="tab_header">Comments</div></td>
   </tr>
 </table>
