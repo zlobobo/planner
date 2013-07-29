@@ -49,11 +49,10 @@ $(document).ready(function(){
         $("#E").load(Routes.edit_content_path($(this).attr('value')));
     });
 
-    $('#B,#C,#D,#E').on('click','.pagination a', function(event){
+    $('#B,#D,#E').on('click','.pagination a', function(event){
         event.preventDefault();
         path = $(this).attr('href');
         $(event.target).parent().parent().load(path);
     });
-
 
 });

@@ -4,6 +4,4 @@ class Activity < ActiveRecord::Base
   belongs_to :activity_category
   has_many :contents, dependent: :destroy
 
-  self.per_page = 7
-
 end

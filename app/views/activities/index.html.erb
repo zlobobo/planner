@@ -1,20 +1,29 @@
-<table class="table">
+
+<table id="act1">
+  <thead>
   <tr>
     <th>Category</th>
     <th>Name</th>
     <th>Description</th>
     <th>Actions</th>
   </tr>
-
-<% @activities.each do |a| %>
-  <tr>
+  </thead>
+  <tbody>
+    <% @activities.each do |a| %>
+    <tr>
     <td><%= a.activity_category.name %></td>
     <td><%= a.name %></td>
     <td><%= a.description %></td>
     <td><a href="#" class="edit_act" value="<%= a.id %>">Edit</a> <%= link_to 'Destroy', a, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+    </tr>
+    <% end %>
+  </tbody>
 </table>
-<%= will_paginate @activities %>
 <br>
 <a href="#" id="new_act">New Activity</a>
+<script>
+$('#act1').dataTable({
+    "aoColumnDefs": [
+        { "bSortable": false, "aTargets": [ 3 ] }
+    ] } );
+</script>
