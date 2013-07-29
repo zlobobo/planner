@@ -307,6 +307,22 @@
   contact_home_index_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"home",false]],[7,"/",false]],[6,"contact",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
+// content => /contents/:id(.:format)
+  content_path: function(_id, options) {
+  return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"contents",false]],[7,"/",false]],[3,"id",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// content_categories => /content_categories(.:format)
+  content_categories_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[7,"/",false],[6,"content_categories",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// content_category => /content_categories/:id(.:format)
+  content_category_path: function(_id, options) {
+  return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"content_categories",false]],[7,"/",false]],[3,"id",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// contents => /contents(.:format)
+  contents_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[7,"/",false],[6,"contents",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
 // destroy_user_session => /users/sign_out(.:format)
   destroy_user_session_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"sign_out",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
@@ -318,6 +334,14 @@
 // edit_activity_category => /activity_categories/:id/edit(.:format)
   edit_activity_category_path: function(_id, options) {
   return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"activity_categories",false]],[7,"/",false]],[3,"id",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// edit_content => /contents/:id/edit(.:format)
+  edit_content_path: function(_id, options) {
+  return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"contents",false]],[7,"/",false]],[3,"id",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// edit_content_category => /content_categories/:id/edit(.:format)
+  edit_content_category_path: function(_id, options) {
+  return Utils.build_path(["id"], ["format"], [2,[2,[2,[2,[2,[2,[7,"/",false],[6,"content_categories",false]],[7,"/",false]],[3,"id",false]],[7,"/",false]],[6,"edit",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
 // edit_home => /home/:id/edit(.:format)
   edit_home_path: function(_id, options) {
@@ -346,6 +370,14 @@
 // new_activity_category => /activity_categories/new(.:format)
   new_activity_category_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"activity_categories",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// new_content => /contents/new(.:format)
+  new_content_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"contents",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
+// new_content_category => /content_categories/new(.:format)
+  new_content_category_path: function(options) {
+  return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"content_categories",false]],[7,"/",false]],[6,"new",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
   },
 // new_home => /home/new(.:format)
   new_home_path: function(options) {

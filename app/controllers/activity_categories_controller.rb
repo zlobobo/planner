@@ -2,7 +2,7 @@ class ActivityCategoriesController < ApplicationController
   before_filter :check_admin
 
   def index
-    @activity_categories = ActivityCategory.all
+    @activity_categories = ActivityCategory.paginate(page: params[:page])
     render layout: false
   end
 

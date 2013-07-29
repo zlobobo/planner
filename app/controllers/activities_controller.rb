@@ -2,34 +2,27 @@ class ActivitiesController < ApplicationController
   before_filter :check_admin
 
   def index
-    @activities = Activity.includes(:activity_category)
+    @activities = Activity.includes(:activity_category).paginate(page: params[:page])
     render layout: false
   end
 
-  # GET /activities/1
-  # GET /activities/1.json
   def show
     @activity = Activity.find(params[:id])
     render layout: false
   end
 
-  # GET /activities/new
-  # GET /activities/new.json
   def new
     @activity = Activity.new
     @category = ActivityCategory.all
     render layout: false
   end
 
-  # GET /activities/1/edit
   def edit
     @activity = Activity.find(params[:id])
     @category = ActivityCategory.all
     render layout: false
   end
 
-  # POST /activities
-  # POST /activities.json
   def create
     @activity = Activity.new(params[:activity])
 
@@ -44,8 +37,6 @@ class ActivitiesController < ApplicationController
     end
   end
 
-  # PUT /activities/1
-  # PUT /activities/1.json
   def update
     @activity = Activity.find(params[:id])
 
@@ -60,8 +51,6 @@ class ActivitiesController < ApplicationController
     end
   end
 
-  # DELETE /activities/1
-  # DELETE /activities/1.json
   def destroy
     @activity = Activity.find(params[:id])
     @activity.destroy

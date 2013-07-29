@@ -1,0 +1,22 @@
+<table class="table">
+  <tr>
+    <th>Category</th>
+    <th>Activity</th>
+    <th>User</th>
+    <th>Data</th>
+    <th>Actions</th>
+  </tr>
+
+  <% @contents.each do |c| %>
+      <tr>
+        <td><%= c.content_category.name %></td>
+        <td><%= c.activity.name %></td>
+        <td><%= c.user.name %></td>
+        <td><%= c.data %></td>
+        <td><a href="#" class="edit_cont" value="<%= c.id %>">Edit</a> <%= link_to 'Destroy', c, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
+<%= will_paginate @contents %>
+<br>
+<a href="#" id="new_cont">New content</a>

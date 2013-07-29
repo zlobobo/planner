@@ -1,4 +1,10 @@
 Planner::Application.routes.draw do
+  resources :contents
+
+
+  resources :content_categories
+
+
   devise_for :users
 
   resources :activities

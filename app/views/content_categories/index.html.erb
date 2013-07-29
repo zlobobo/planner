@@ -1,0 +1,16 @@
+<table class="table">
+  <tr>
+    <th>Name</th>
+    <th>Actions</th>
+  </tr>
+
+  <% @content_categories.each do |content_category| %>
+      <tr>
+        <td><%= content_category.name %></td>
+        <td><a href="#" class="edit_cont_cat" value="<%= content_category.id %>">Edit</a> <%= link_to 'Destroy', content_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+  <% end %>
+</table>
+<%= will_paginate @content_categories %>
+<br>
+<a href="#" id="new_cont_cat">New Content category</a>
