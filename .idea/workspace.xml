@@ -4,19 +4,13 @@
     <list default="true" id="3ccd4393-944d-4f9e-81bf-93270d86277b" name="Default" comment="">
       <change type="DELETED" beforePath="C:\Sites\planner\public\images\rails.png" afterPath="" />
       <change type="DELETED" beforePath="C:\Sites\planner\public\images\temp1.jpg" afterPath="" />
-      <change type="MOVED" beforePath="C:\Sites\planner\app\assets\stylesheets\222.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/common.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/activities_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/activity_categories_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/activity_categories_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/admin.html.erb" afterPath="$PROJECT_DIR$/app/views/home/admin.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascript/admin.js" afterPath="$PROJECT_DIR$/public/javascript/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activities/index.html.erb" afterPath="$PROJECT_DIR$/app/views/activities/index.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/activity_categories/index.html.erb" afterPath="$PROJECT_DIR$/app/views/activity_categories/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/common.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/common.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="planner.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1375247573258" ignored="false" />
+    <file path="/Dummy.txt" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1375284944778" ignored="false" />
     <file path="/index.html.erb" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1375280086326" ignored="false" />
     <file path="/application.html.erb" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1374839937230" ignored="false" />
     <file path="/222.css" changelist="3ccd4393-944d-4f9e-81bf-93270d86277b" time="1375280186144" ignored="false" />
@@ -88,19 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="activity_categories_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/activity_categories_controller.rb">
+      <file leaf-file-name="jquery.dataTables.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="67" column="65" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="common.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="128" column="0" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-0.38325283">
+            <state line="36" column="62" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -118,7 +103,16 @@
       <file leaf-file-name="admin.html.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/home/admin.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="34" column="10" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-22.23077">
+            <state line="17" column="60" selection-start="714" selection-end="714" vertical-scroll-proportion="-11.115385">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="scaffolds.css.scss" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="20" selection-start="257" selection-end="257" vertical-scroll-proportion="0.3558776">
               <folding />
             </state>
           </provider>
@@ -142,14 +136,11 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/models/content.rb" />
-        <option value="$PROJECT_DIR$/app/models/content_category.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/views/content_categories/index.html.erb" />
         <option value="$PROJECT_DIR$/app/views/contents/index.html.erb" />
         <option value="$PROJECT_DIR$/app/models/activity.rb" />
         <option value="$PROJECT_DIR$/app/views/contents/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css" />
         <option value="$PROJECT_DIR$/app/views/activities/index.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/activities_controller.rb" />
         <option value="$PROJECT_DIR$/app/controllers/activity_categories_controller.rb" />
@@ -158,6 +149,9 @@
         <option value="$PROJECT_DIR$/app/views/home/admin.html.erb" />
         <option value="$PROJECT_DIR$/app/controllers/home_controller.rb" />
         <option value="$PROJECT_DIR$/public/javascript/admin.js" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/common.css" />
+        <option value="$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss" />
       </list>
     </option>
   </component>
@@ -200,7 +194,7 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -453,17 +447,17 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="project.propVCSSupport.Mappings" />
+    <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Rails.Development: planner">
     <configuration default="true" type="RakeRunConfigurationType" factoryName="Rake">
@@ -692,7 +686,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.29988852" sideWeight="0.67395836" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.303233" sideWeight="0.67395836" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
@@ -770,69 +764,24 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/controllers/content_categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.32850242">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="92" selection-start="1386" selection-end="1464" vertical-scroll-proportion="0.6689076">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/activity.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="41" selection-start="190" selection-end="190" vertical-scroll-proportion="0.1095008">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/activity_category.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="2" selection-start="134" selection-end="151" vertical-scroll-proportion="0.1095008">
-          <folding />
-        </state>
+        <state line="4" column="2" selection-start="134" selection-end="151" vertical-scroll-proportion="0.1095008" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/public/javascript/jquery.dataTables.min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.243421">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-2.243421" />
       </provider>
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/json-1.8.0/data/prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1509" column="9" selection-start="40315" selection-end="40315" vertical-scroll-proportion="0.33333334">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/activities/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
+        <state line="1509" column="9" selection-start="40315" selection-end="40315" vertical-scroll-proportion="0.33333334" />
       </provider>
     </entry>
     <entry file="file://C:/RailsInstaller/Ruby1.9.3/lib/ruby/gems/1.9.1/gems/actionpack-3.2.13/lib/action_controller/metal/redirecting.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="68" column="8" selection-start="3819" selection-end="3882" vertical-scroll-proportion="0.33223686">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="4" selection-start="1228" selection-end="1292" vertical-scroll-proportion="0.0273752">
-          <folding />
-        </state>
+        <state line="68" column="8" selection-start="3819" selection-end="3882" vertical-scroll-proportion="0.33223686" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/activities_controller.rb">
@@ -844,7 +793,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/activity_categories/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0">
+        <state line="0" column="29" selection-start="29" selection-end="29" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/application.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/custom.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.1078905">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="102" column="49" selection-start="1282" selection-end="1282" vertical-scroll-proportion="0.16425121">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/activity_categories_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="67" column="65" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.6988728">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/jquery.dataTables.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="62" selection-start="893" selection-end="893" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -852,6 +834,13 @@
     <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="0" selection-start="308" selection-end="308" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/activities/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
@@ -865,21 +854,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/admin.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="10" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-22.23077">
+        <state line="17" column="60" selection-start="714" selection-end="714" vertical-scroll-proportion="-11.115385">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/activity_categories_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/scaffolds.css.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="67" column="65" selection-start="2123" selection-end="2123" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/stylesheets/common.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="128" column="0" selection-start="1628" selection-end="1628" vertical-scroll-proportion="-0.38325283">
+        <state line="13" column="20" selection-start="257" selection-end="257" vertical-scroll-proportion="0.3558776">
           <folding />
         </state>
       </provider>

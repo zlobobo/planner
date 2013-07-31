@@ -1,7 +1,6 @@
 
 #tab1 tr, #tab2 tr{
 vertical-align: top;
-background: white;
 }
 #tab1,#tab2{
 width:100%;
@@ -117,8 +116,7 @@ li{
 
 body{
     font-family:"Lucida Grande", arial, sans-serif;
-    background:#ffffcc;
-    overflow:auto; 
+    overflow:auto;
     padding-bottom: 20px;
 }
 
@@ -126,6 +124,7 @@ body{
     margin:0;
     padding:0;
 }
+
 .tab_selected td{
     background-color: #B0BED9;
     }
