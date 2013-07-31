@@ -11,3 +11,5 @@
  *= require_self
  *= require_tree .
  */
+@import url('/css/common.css');
+@import url('/css/custom.css');
