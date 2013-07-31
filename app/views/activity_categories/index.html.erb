@@ -1,16 +1,26 @@
-<table class="table">
+<table class="table" id="cat1">
+  <thead>
   <tr>
     <th>Name</th>
-    <th>Actions</th>
   </tr>
-
-<% @activity_categories.each do |activity_category| %>
-  <tr>
-    <td><%= activity_category.name %></td>
-    <td><a href="#" class="edit_cat" value="<%= activity_category.id %>">Edit</a> <%= link_to 'Destroy', activity_category, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-  </tr>
-<% end %>
+  </thead>
+  <tbody>
+  <% @activity_categories.each do |activity_category| %>
+      <tr value=<%= activity_category.id %>>
+        <td><%= activity_category.name %></td>
+      </tr>
+  <% end %>
+  </tbody>
 </table>
 <%= will_paginate @activity_categories %>
-<br>
-<a href="#" id="new_cat">New Activity category</a>
+<div class="DTTT_container">
+  <a class="DTTT_button DTTT_button_text" id="new_cat">
+    <span>New</span>
+  </a>
+  <a class="DTTT_button DTTT_button_text hidden" id="edit_cat">
+    <span>Edit</span>
+  </a>
+  <a class="DTTT_button DTTT_button_text hidden" id="delete_cat" data-confirm="Are you sure?" data-method="delete" rel="nofollow">
+    <span>Delete</span>
+  </a>
+</div>

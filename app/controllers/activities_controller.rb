@@ -2,8 +2,13 @@ class ActivitiesController < ApplicationController
   before_filter :check_admin
 
   def index
-    @activities = Activity.includes(:activity_category)
-    render layout: false
+    respond_to do |format|
+      format.html { render layout: false }
+      format.json {
+        @activities = Activity.includes(:activity_category)
+        render json: @activities.select([:id, :activity_category_id,:name,:description]).to_json(include: { activity_category: { only: :name }})
+      }
+    end
   end
 
   def show
@@ -28,7 +33,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.save
-        format.html { redirect_to admin_home_index_path, notice: 'Activity was successfully created.' }
+        format.html { redirect_to admin_home_index_path({tab: 'C'}),  notice: 'Activity was successfully created.' }
         format.json { render json: @activity, status: :created, location: @activity }
       else
         format.html { render action: "new" }
@@ -42,7 +47,7 @@ class ActivitiesController < ApplicationController
 
     respond_to do |format|
       if @activity.update_attributes(params[:activity])
-        format.html { redirect_to admin_home_index_path, notice: 'Activity was successfully updated.' }
+        format.html { redirect_to admin_home_index_path({tab: 'C'}), notice: 'Activity was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -56,7 +61,7 @@ class ActivitiesController < ApplicationController
     @activity.destroy
 
     respond_to do |format|
-      format.html { redirect_to admin_home_index_path }
+      format.html { redirect_to admin_home_index_path({tab: 'C'}) }
       format.json { head :no_content }
     end
   end

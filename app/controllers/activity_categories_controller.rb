@@ -3,7 +3,12 @@ class ActivityCategoriesController < ApplicationController
 
   def index
     @activity_categories = ActivityCategory.paginate(page: params[:page])
-    render layout: false
+    respond_to do |format|
+      format.html { render layout: false }
+      format.json {
+        render json: @activity_categories.select([:name])
+      }
+    end
   end
 
   def show
@@ -28,7 +33,7 @@ class ActivityCategoriesController < ApplicationController
 
     respond_to do |format|
       if @activity_category.save
-        format.html { redirect_to admin_home_index_path, notice: 'Activity category was successfully created.' }
+        format.html { redirect_to admin_home_index_path({tab: 'B'}), notice: 'Activity category was successfully created.' }
         format.json { render json: @activity_category, status: :created, location: @activity_category }
       else
         format.html { render action: "new" }
@@ -44,7 +49,7 @@ class ActivityCategoriesController < ApplicationController
 
     respond_to do |format|
       if @activity_category.update_attributes(params[:activity_category])
-        format.html { redirect_to admin_home_index_path, notice: 'Activity category was successfully updated.' }
+        format.html { redirect_to admin_home_index_path({tab: 'B'}), notice: 'Activity category was successfully updated.' }
         format.json { head :no_content }
       else
         format.html { render action: "edit" }
@@ -60,7 +65,7 @@ class ActivityCategoriesController < ApplicationController
     @activity_category.destroy
 
     respond_to do |format|
-      format.html { redirect_to admin_home_index_path }
+      format.html { redirect_to admin_home_index_path({tab: 'B'}) }
       format.json { head :no_content }
     end
   end

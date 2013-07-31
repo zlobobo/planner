@@ -1,29 +1,22 @@
-
 <table id="act1">
   <thead>
   <tr>
     <th>Category</th>
     <th>Name</th>
     <th>Description</th>
-    <th>Actions</th>
   </tr>
   </thead>
   <tbody>
-    <% @activities.each do |a| %>
-    <tr>
-    <td><%= a.activity_category.name %></td>
-    <td><%= a.name %></td>
-    <td><%= a.description %></td>
-    <td><a href="#" class="edit_act" value="<%= a.id %>">Edit</a> <%= link_to 'Destroy', a, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-    </tr>
-    <% end %>
   </tbody>
 </table>
-<br>
-<a href="#" id="new_act">New Activity</a>
-<script>
-$('#act1').dataTable({
-    "aoColumnDefs": [
-        { "bSortable": false, "aTargets": [ 3 ] }
-    ] } );
-</script>
+<div class="DTTT_container">
+  <a class="DTTT_button DTTT_button_text" id="new_act">
+    <span>New</span>
+  </a>
+  <a class="DTTT_button DTTT_button_text hidden" id="edit_act">
+    <span>Edit</span>
+  </a>
+  <a class="DTTT_button DTTT_button_text hidden" id="delete_act" data-confirm="Are you sure?" data-method="delete" rel="nofollow">
+    <span>Delete</span>
+  </a>
+</div>
