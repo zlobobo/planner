@@ -6,7 +6,7 @@ class HomeController < ApplicationController
   require 'open-uri'
 
   def index
-
+	
     url = "http://nightcity.en.cx/GameDetails.aspx?gid=43073"
     doc = Nokogiri::HTML(open(url))
     items = {}
@@ -14,6 +14,7 @@ class HomeController < ApplicationController
       newpath = 'http://nightcity.en.cx' + item.attr("href")
       items[item.text] = newpath
     end
+    @itog = []
     items.each do |key,value|
       link = Nokogiri::HTML(open(value))
       whole = link.at_css("#enTeamDetailsPanel_divInfo div+span+div+span").text
@@ -30,7 +31,7 @@ class HomeController < ApplicationController
         res += el.to_f
       end
       final = whole.to_f.round(2) - res.round(2)
-      @itog = []
+      
       @itog.push("Team: "+ key + " have " + whole.to_s + " points|Active part: "+ final.round(2).to_s)
 
     end
