@@ -31,8 +31,9 @@ class HomeController < ApplicationController
         res += el.to_f
       end
       final = whole.to_f.round(2) - res.round(2)
-      
-      @itog.push("Team: "+ key + " have " + whole.to_s + " points|Active part: "+ final.round(2).to_s)
+
+
+      @itog.push([key,whole.to_s, final.round(2).to_s])
 
     end
   end

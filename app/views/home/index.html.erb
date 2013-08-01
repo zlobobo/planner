@@ -1,5 +1,20 @@
-<h1>Bla-bla</h1>
+<h2><%= Time.now().strftime("Updated at %H:%M")  %></h2>
 
+<table class="table">
+<thead>
+<tr>
+  <th>Команда</th>
+  <th>Все очки</th>
+  <th>Активная часть</th>
+</tr>
+</thead>
+<tbody>
 <% @itog.each do |c| %>
-      <p><%= c %></p>
+    <tr>
+        <td><%= c[0] %></td>
+        <td><%= c[1] %></td>
+        <td><%= c[2] %></td>
+    </tr>
 <% end %>
+</tbody>
+</table>
