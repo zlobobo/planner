@@ -41,7 +41,9 @@
     <orderEntry type="library" scope="PROVIDED" name="json (v1.8.0, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mail (v2.5.4, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="mime-types (v1.23, ruby-1.9.3-p392 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="mini_portile (v0.5.1, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.7.7, ruby-1.9.3-p392 (1)) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="nokogiri (v1.6.0, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="orm_adapter (v0.4.0, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="pg (v0.15.1, ruby-1.9.3-p392 (1)) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="polyglot (v0.3.3, ruby-1.9.3-p392 (1)) [gem]" level="application" />
