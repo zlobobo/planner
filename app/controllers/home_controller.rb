@@ -6,8 +6,9 @@ class HomeController < ApplicationController
   require 'open-uri'
 
   def index
-	
-    url = "http://nightcity.en.cx/GameDetails.aspx?gid=43073"
+
+=begin
+        url = "http://nightcity.en.cx/GameDetails.aspx?gid=43073"
     doc = Nokogiri::HTML(open(url))
     items = {}
     doc.css("#lnkPlayerInfo").each do |item|
@@ -36,6 +37,8 @@ class HomeController < ApplicationController
       @itog.push([key,whole.to_s, final.round(2).to_s])
 
     end
+=end
+
   end
 
   def about

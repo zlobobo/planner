@@ -6,7 +6,7 @@ class ActivitiesController < ApplicationController
       format.html { render layout: false }
       format.json {
         @activities = Activity.includes(:activity_category)
-        render json: @activities.select([:id, :activity_category_id,:name,:description]).to_json(include: { activity_category: { only: :name }})
+        render json: @activities.select([:id, :activity_category_id, :name, :description]).to_json(include: { activity_category: { only: :name }})
       }
     end
   end
