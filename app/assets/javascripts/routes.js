@@ -407,6 +407,10 @@
   root_path: function(options) {
   return Utils.build_path([], [], [7,"/",false], arguments);
   },
+// tag => /tags/:tag(.:format)
+  tag_path: function(_tag, options) {
+  return Utils.build_path(["tag"], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"tags",false]],[7,"/",false]],[3,"tag",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);
+  },
 // user_password => /users/password(.:format)
   user_password_path: function(options) {
   return Utils.build_path([], ["format"], [2,[2,[2,[2,[7,"/",false],[6,"users",false]],[7,"/",false]],[6,"password",false]],[1,[2,[8,".",false],[3,"format",false]],false]], arguments);

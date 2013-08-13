@@ -25,6 +25,8 @@ root :to => 'home#index'
     get 'admin', on: :collection
   end
 
+  get 'tags/:tag', to: 'catalog#index', as: :tag
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

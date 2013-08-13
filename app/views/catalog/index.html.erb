@@ -2,7 +2,7 @@
   <div class="span3">
     <!-- Sidebar Holder -->
     <div class="well sidebar-nav">
-      <ul><li class="nav-header">Categories</li></ul>
+      <ul class="side_ul"><li class="nav-header">Categories</li></ul>
       <!-- Categories Holder -->
       <ul class="nav nav-list" id="categories_list">
         <li id="all" class="active_category"><a href="#" class="all">All</a></li>
@@ -11,7 +11,28 @@
         <% end %>
       </ul>
       <!-- /Categories Holder -->
+      <hr>
+      <ul class="side_ul"><li class="nav-header">Tags</li></ul>
+
+      <div id="myCanvasContainer">
+        <canvas id="myCanvas">
+          <p>Anything in here will be replaced on browsers that support the canvas element</p>
+        </canvas>
+      </div>
+      <div id="tags">
+        <ul>
+          <% tag_cloud Activity.tag_counts, %w{s m l} do |tag, css_class| %>
+          <li> <%= link_to tag.name, tag_path(tag.name)%></li>
+          <% end %>
+        </ul>
+      </div>
+      <ul class="side_ul hidden" id="tag_header"><li class="nav-header">Selected tag</li></ul>
+      <div id="selected_tags">
+        <ul></ul>
+        <a id="clear_tag" class="hidden">Clear tags</a>
+      </div>
     </div>
+
     <!-- /Sidebar Holder -->
   </div>
   <div class="span9">
@@ -36,6 +57,7 @@
                     </div>
                     <div class="modal-body">
                       <p class="four"><%= a.description %></p>
+                      <p>Tags: <%= raw a.tag_list.map { |t| link_to t, tag_path(t) }.join(', ') %></p>
                     </div>
                     <div class="modal-footer"></div>
                   </div>
@@ -53,4 +75,5 @@
     <!-- /Products Holder -->
   </div>
 </div>
+<script src="http://www.goat1000.com/jquery.tagcanvas.min.js" type="text/javascript"></script>
 <%= javascript_include_tag "../javascript/catalog.js"%>

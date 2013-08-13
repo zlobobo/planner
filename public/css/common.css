@@ -60,6 +60,20 @@ a span{
     height: 15px;
 }
 
+.side_ul{
+    margin:0 ;
+}
+
+#myCanvasContainer{
+    margin: 0;
+}
+
+#myCanvas{
+    margin: 1px;
+    width: 186px;
+    height: 150px;
+}
+
 
 #header{
     margin-top: 10px;

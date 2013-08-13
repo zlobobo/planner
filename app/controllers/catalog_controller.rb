@@ -5,11 +5,18 @@ class CatalogController < ApplicationController
     category = params[:cat_id] || 'all'
     @cats = ActivityCategory.all
     if category != 'all'
-      @acts = Activity.where('activity_category_id = ?', category)
+      if params[:tag]
+        @acts = Activity.tagged_with(params[:tag]).where('activity_category_id = ?', category)
+      else
+        @acts = Activity.where('activity_category_id = ?', category)
+      end
     else
-      @acts = Activity.all
+      if params[:tag]
+        @acts = Activity.tagged_with(params[:tag])
+      else
+        @acts = Activity.all
+      end
     end
-    render layout: false
   end
 
 end

@@ -15,6 +15,7 @@
 //= require_tree .
 $(document).ready(function(){
 
+
     $.ajaxSetup ({
         cache: false,
         timeout: 2000
@@ -30,7 +31,8 @@ $(document).ready(function(){
         location.href = Routes.home_index_path();
     });
     $("#catalog").click(function(){
-        $("#container").load(Routes.catalog_index_path());
+        /*$("#container").load(Routes.catalog_index_path());*/
+        location.href = Routes.catalog_index_path();
     });
     $("#planner").click(function(){
         $("#container").load(Routes.planner_index_path());
